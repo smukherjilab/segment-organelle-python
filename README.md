@@ -16,8 +16,6 @@ This repo contains scripts that I use to measure the sizes and numbers of differ
 - step 4: read the csv files and find insights from the data
     - `analysis_6colors_largeDataset.py`
 
-## Script Structure
+## the `latsingdan()` function
 
-For each step, the work can be abtracted as "take some input, apply some manipulations, and save the result into the output", so I wrap the manipulations into a function called `wrapper()`, which takes a tuple `(input,output)` as input, and the function `latsingdan`
-
-- `latsingdan`: 
+For each step, the work can be abtracted as "take some input, apply some manipulations, and save the result into the output", so I wrap the manipulations into a function called `wrapper()`, which takes a tuple `zipped = (input,output)` as input, and the function `latsingdan` calls the `wrapper()` onto a list of `(input,output)` tuples, and record the finished ones into `finished`. This helps us when some entry fails due to some bug. We can skip them by passing the old `finished` to the new `skip` and rerun the script. 
