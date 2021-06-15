@@ -1,6 +1,6 @@
 # Segment and Measure Organelles in Cells
 
-This repo contains scripts that I use to measure the sizes and numbers of different organelles in cells, from microscopy images to 
+This repo contains scripts that I use to measure the sizes and numbers of different organelles in cells, from microscopy images to csv data and plots
 
 ## Workflow:
 
